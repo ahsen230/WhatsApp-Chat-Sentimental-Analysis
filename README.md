@@ -57,7 +57,7 @@ chat %>%
   
  ```
  
- [!Common Words](images/usedword_plot.png)
+ ![Common Words](images/usedword_plot.png)
 
 ## Check the count of any word
 
@@ -75,7 +75,7 @@ chat %>%unnest_tokens(input = text, output = word) %>%
        xlab("")+
        ggtitle("BC used")+theme_bw()
 ```
- [!word Count](images/anyword_plot.png)
+ ![word Count](images/anyword_plot.png)
  
  
  ## Unique Words by each person
@@ -100,7 +100,7 @@ chat %>%
     coord_flip()+theme_minimal()
     
   ```
-  [!Unique word](images/uniqueword_plot.png)
+  ![Unique word](images/uniqueword_plot.png)
 
 
 
@@ -121,5 +121,5 @@ Sentiment_Analysis %>% tidyr::gather("id", "value", 2:11) %>%
        ylab("")+theme_bw()
        
 ```
-[!Sentimental Analysis](images/sentiment_plot.png)
+![Sentimental Analysis](images/sentiment_plot.png)
 
