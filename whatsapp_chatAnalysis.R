@@ -1,18 +1,12 @@
 
 library(rwhatsapp)
-
 chat <- rwa_read("C:/Users/ahsen/OneDrive/Documents/WhatsApp Chat with Just Jaakut Gang.txt")
 
 
 chat <- chat[!is.na(chat$author),]
 
-chat <- subset(chat, !(author=="+92 304 8196795" | author=="+92 314 5310281" | author=="+92 349 4025458" | author=="Bilal Hasa"))
-
 chat <- subset(chat, !(text=="<Media omitted>" ))
 
- levels(chat$author)[levels(chat$author)=="+965 9992 7670"] <- "Adil K1"
- levels(chat$author)[levels(chat$author)=="Osama T"] <- "Usama Tariq 1"
- levels(chat$author)[levels(chat$author)=="Hassan Raza"] <- "Hassan Raza Uni"
 
 
 chat %>%
