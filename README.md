@@ -36,7 +36,7 @@ chat %>%
   
   
 ## How does it look if we compare favourite words? I use the excellent tidytext package to get this task done.
-## Most often Used Words
+### Most often Used Words
 
 ```
 library(tidytext)
